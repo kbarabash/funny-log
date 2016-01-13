@@ -7,9 +7,13 @@
     "console.log",
     "logger"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbarabash/FunnyLog"
+  },
   "author": "kbarabash <barkir89@gmail.com>",
   "license": "ISC",
-  "main": "index.js",
+  "main": ".dist/funny-log.js",
   "scripts": {
     "install": "npm run deploy && npm run build",
     "deploy": "gulp build --production",
