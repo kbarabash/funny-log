@@ -1,0 +1,31 @@
+{
+  "name": "FunnyLog",
+  "version": "0.0.1",
+  "description": "funny log",
+  "keywords": [
+    "funny",
+    "console.log",
+    "logger"
+  ],
+  "author": "kbarabash <barkir89@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm run deploy && npm run build",
+    "deploy": "gulp build --production",
+    "build": "gulp build",
+    "start": "gulp serve",
+    "test": "mocha ./tests/*.js"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat-util": "^0.5.4",
+    "gulp-util": "^3.0.7",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1",
+    "sinon": "^1.17.2"
+  }
+}
