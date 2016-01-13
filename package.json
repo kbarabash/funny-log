@@ -1,5 +1,5 @@
 {
-  "name": "FunnyLog",
+  "name": "funny-log",
   "version": "0.0.1",
   "description": "Decorator which updates user's messages. I don't know why I did it.",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kbarabash/FunnyLog"
+    "url": "https://github.com/kbarabash/funny-log"
   },
   "author": "kbarabash <barkir89@gmail.com>",
   "license": "ISC",
