@@ -29,6 +29,7 @@ I don't know why I did it.
     - (ღ˘⌣˘ღ)
     - ( ͡° ͜ʖ ͡°)
     -  ༼ຈل͜ຈ༽
+* FunnyLog **random**(string message) - %random-prefix% %message%.
 
 
 ##Example
