@@ -1,3 +1,3 @@
 var isUndefined = function(a) {
-    return typeof a !== 'undefined';
+    return typeof a === 'undefined';
 };
