@@ -3,6 +3,7 @@ var concat = require('gulp-concat-util');
 var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var SETTINGS = require('./settings.json');
+var uglify = require('gulp-uglify');
 
 gulp.task('build', function() {
     var isProduction = gutil.env.production;
@@ -20,6 +21,7 @@ gulp.task('build', function() {
             '})();'
         ].join("\n")))
         .pipe(isProduction ? gutil.noop(): sourcemaps.write())
+        .pipe(isProduction ? uglify() : gutil.noop())
         .pipe(gulp.dest(SETTINGS.buildFolder));
 });
 
