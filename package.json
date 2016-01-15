@@ -20,7 +20,9 @@
     "deploy": "gulp build --production",
     "build": "gulp build",
     "start": "gulp serve",
-    "test": "mocha ./tests/*.js"
+    "test": "npm run test-node && npm run test-web",
+    "test-node": "mocha ./tests/*.js",
+    "test-web": "mocha-phantomjs ./tests/web.html"
   },
   "dependencies": {
     "gulp": "^3.9.0",
@@ -32,6 +34,7 @@
   "devDependencies": {
     "mocha": "^2.3.4",
     "chai": "^3.4.1",
-    "sinon": "^1.17.2"
+    "sinon": "^1.17.2",
+    "mocha-phantomjs": "^4.0.2"
   }
 }
