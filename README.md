@@ -11,7 +11,7 @@ I don't know why I did it.
 * FunnyLog **angry**(string message) - (ノಠ益ಠ)ノ彡┻━┻ %message%.
     Prefix can be one of these:
     - (ノಠ益ಠ)ノ彡┻━┻
-    - (ಠ益ಠ)"
+    - (ಠ益ಠ)
     - (っ-●益●)っ ~~
     - (╬ ಠ益ಠ)
 * FunnyLog **why**(string message) - ლ(`◉◞౪◟◉‵ლ) %message% 
