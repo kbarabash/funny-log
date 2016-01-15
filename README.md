@@ -1,5 +1,6 @@
 #FunnyLog
 [![Build Status](https://travis-ci.org/kbarabash/funny-log.svg?branch=master)](https://travis-ci.org/kbarabash/funny-log)
+[![npm version](https://badge.fury.io/js/funny-log.svg)](https://badge.fury.io/js/funny-log)
 
 Decorator which updates user's messages.
 I don't know why I did it.
