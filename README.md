@@ -31,7 +31,7 @@ I don't know why I did it.
 
 
 ##Example
-```
+```JavaScript
 var logger = new FunnyLogger();
 logger.haha('Hello World!'); //☜(ﾟヮﾟ☜) Hello World!
 ```
