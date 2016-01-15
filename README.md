@@ -1,4 +1,6 @@
 #FunnyLog
+[![Build Status](https://travis-ci.org/kbarabash/funny-log.svg?branch=master)](https://travis-ci.org/kbarabash/funny-log)
+
 Decorator which updates user's messages.
 I don't know why I did it.
 
