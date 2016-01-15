@@ -13,6 +13,7 @@ I don't know why I did it.
     - (ノಠ益ಠ)ノ彡┻━┻
     - (ಠ益ಠ)"
     - (っ-●益●)っ ~~
+    - (╬ ಠ益ಠ)
 * FunnyLog **why**(string message) - ლ(`◉◞౪◟◉‵ლ) %message% 
 * FunnyLog **partyTime**(string message) - ┏(-_-)┛┗(-_-﻿ )┓┗(-_-)┛┏(-_-)┓ %message% 
 * FunnyLog **wtf**(string message) - (ಠ_ಠ) %message% 
