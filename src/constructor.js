@@ -17,6 +17,7 @@ var FunnyLog = function() {
          }
 
         var index = randomizer(0, prefixes.length - 1);
+
         return prefixes[index];
     };
 

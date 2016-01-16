@@ -23,6 +23,20 @@ I don't know why I did it.
 * FunnyLog **hehehe**(string message) - ( ¬‿¬) %message% 
 * FunnyLog **allPraiseToHim**(string message) - し(*･∀･)／♡＼(･∀･*)ノ %message% 
 * FunnyLog **mmmOkay**(string message) - ༼ ºل͟º ༽ %message% 
+* FunnyLog **homer**(string message) - (_8(l) %message%,
+* FunnyLog **really**(string message) - "﴾͡๏̯͡๏﴿ O'RLY? %message%,
+* FunnyLog **soWhat**(string message) - ¯\_(ツ)_/¯ %message%,
+    Prefix can be one of these:
+    - ¯\_(ツ)_/¯
+    - ʅ(｡◔‸◔｡)ʃ
+* FunnyLog **omg**(string message) - ┌༼ ⊘ _ ⊘ ༽┐ %message%,
+    Prefix can be one of these:
+    - ┌༼ ⊘ _ ⊘ ༽┐
+    - ༼ᶿ᷇ཫᶿ᷆༽
+* FunnyLog **noWay**(string message) - ༼ ಥل͟ಥ ༽ %message%,
+* FunnyLog **facepalm**(string message) - (－_ლ) %message%,
+* FunnyLog **doubleFacepalm**(string message) - (ლ_－)(－_ლ) %message%,
+* FunnyLog **bender**(string message) - |==(̢└͇̅┘͇̅(▤8כ−◦  %message%
 * FunnyLog **smile**(string message) - (ツ) %message%.
     Prefix can be one of these:
     - (ツ)

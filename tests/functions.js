@@ -65,7 +65,68 @@
             expect(loggerSpy.args[0][0]).to.be.eql('┏(-_-)┛┗(-_-﻿ )┓┗(-_-)┛┏(-_-)┓ partyTime message');
         });
 
+        it('homer',function(){
+            expect(funnyLogger.homer('homer message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('(_8(l) homer message');
+
+        });
+        it('really',function(){
+            expect(funnyLogger.really('really message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql("﴾͡๏̯͡๏﴿ O'RLY? really message");
+
+        });
+        it('soWhat',function(){
+            funnyLogger.setRandomizer(function() {
+                return 0;
+            });
+            expect(funnyLogger.soWhat('soWhat message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('¯\_(ツ)_/¯ soWhat message');
+
+        });
+        it('omg',function(){
+            funnyLogger.setRandomizer(function() {
+                return 0;
+            });
+            expect(funnyLogger.omg('omg message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('┌༼ ⊘ _ ⊘ ༽┐ omg message');
+
+        });
+        it('noWay',function(){
+            funnyLogger.setRandomizer(function() {
+                return 1;
+            });
+            expect(funnyLogger.noWay('noWay message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('༼ ಥل͟ಥ ༽ noWay message');
+
+        });
+        it('facepalm',function(){
+            expect(funnyLogger.facepalm('facepalm message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('(－_ლ) facepalm message');
+
+        });
+        it('doubleFacepalm',function(){
+            expect(funnyLogger.doubleFacepalm('doubleFacepalm message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('(ლ_－)(－_ლ) doubleFacepalm message');
+
+        });
+        it('bender',function(){
+            expect(funnyLogger.bender('bender message')).to.be.eql(funnyLogger);
+            expect(loggerSpy.calledOnce).to.be.true;
+            expect(loggerSpy.args[0][0]).to.be.eql('|==(̢└͇̅┘͇̅(▤8כ−◦ bender message');
+
+        });
+
         it('wtf', function() {
+            funnyLogger.setRandomizer(function() {
+                return 0;
+            });
             expect(funnyLogger.wtf('wtf message')).to.be.eql(funnyLogger);
             expect(loggerSpy.calledOnce).to.be.true;
             expect(loggerSpy.args[0][0]).to.be.eql('(ಠ_ಠ) wtf message');
