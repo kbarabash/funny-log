@@ -21,7 +21,7 @@
     "build": "gulp build",
     "start": "gulp serve",
     "test": "npm run test-node && npm run test-web",
-    "test-node": "mocha ./tests/*.js",
+    "test-node": "mocha --recursive ./tests/",
     "test-web": "mocha-phantomjs ./tests/web.html"
   },
   "dependencies": {
@@ -29,12 +29,14 @@
     "gulp-concat-util": "^0.5.4",
     "gulp-util": "^3.0.7",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.1"
+    "gulp-uglify": "^1.5.1",
+    "gulp-replace": "0.5.4"
   },
   "devDependencies": {
     "mocha": "^2.3.4",
     "chai": "^3.4.1",
     "sinon": "^1.17.2",
-    "mocha-phantomjs": "^4.0.2"
+    "mocha-phantomjs": "^4.0.2",
+    "deep-freeze": "0.0.1"
   }
 }

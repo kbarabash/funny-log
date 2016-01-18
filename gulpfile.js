@@ -4,6 +4,7 @@ var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var SETTINGS = require('./settings.json');
 var uglify = require('gulp-uglify');
+var replace = require('gulp-replace');
 
 gulp.task('build', function() {
     var isProduction = gutil.env.production;
@@ -13,13 +14,15 @@ gulp.task('build', function() {
         .pipe(concat.header('(function() {' + "\n"))
         .pipe(concat.footer([
             "\n",
-            'if (typeof window === "undefined") {',
+            'if (isNode()) {',
             '    module.exports = FunnyLog;',
             '} else {',
             '    window.FunnyLog = FunnyLog;',
             '}',
             '})();'
         ].join("\n")))
+        .pipe(replace(/var .* = require\(.*\);/g, ''))
+        .pipe(replace(/module.exports = (?!FunnyLog).*;/g, ''))
         .pipe(isProduction ? gutil.noop(): sourcemaps.write())
         .pipe(isProduction ? uglify() : gutil.noop())
         .pipe(gulp.dest(SETTINGS.buildFolder));
