@@ -1,7 +1,7 @@
 (function() {
     var expect = require('chai').expect;
     var sinon = require('sinon');
-    var FunnyLog = require('../.dist/funny-log');
+    var FunnyLog = require('../src/constructor');
     var randomizer = require('../src/utils/randomizer');
 
     describe('FunnyLog constructor', function() {

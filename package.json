@@ -22,7 +22,8 @@
     "start": "gulp serve",
     "test": "npm run test-node && npm run test-web",
     "test-node": "mocha --recursive ./tests/",
-    "test-web": "mocha-phantomjs ./tests/web.html"
+    "test-web": "mocha-phantomjs ./tests/web.html",
+    "coverage": "istanbul cover _mocha -- -R spec --recursive ./tests/"
   },
   "dependencies": {
     "gulp": "^3.9.0",
@@ -37,6 +38,7 @@
     "chai": "^3.4.1",
     "sinon": "^1.17.2",
     "mocha-phantomjs": "^4.0.2",
-    "deep-freeze": "0.0.1"
+    "deep-freeze": "0.0.1",
+    "istanbul": "0.4.2"
   }
 }

@@ -1,4 +1,11 @@
-var FunnyLog = function() {
+var randomizer = require('./utils/randomizer');
+var concatArrays = require('./utils/concat-arrays');
+var isArray = require('./utils/is-array');
+var isFunction = require('./utils/is-function');
+var isUndefined = require('./utils/is-undefined');
+var CONFIG = require('./config');
+
+var _FunnyLog = FunnyLogConstructor = function() {
     var allPrefixes = [];
     var isEnable = true;
     var provider = null;
@@ -131,3 +138,5 @@ var FunnyLog = function() {
         }
     })(this);
 };
+
+module.exports = _FunnyLog;

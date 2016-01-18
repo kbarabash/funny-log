@@ -25,22 +25,43 @@
     <script src="../src/utils/is-undefined.js"></script>
     <script src="../src/utils/randomizer.js"></script>
 
+    <script src="../src/config.js"></script>
+
     <script>
+        var libs = {
+            'chai': chai,
+            'sinon': sinon,
+            '../.dist/funny-log': FunnyLog,
+            '../../.dist/funny-log': FunnyLog,
+            '../../src/utils/concat-arrays': concatArrays,
+            '../../src/utils/is-array': isArray,
+            '../../src/utils/is-function': isFunction,
+            '../../src/utils/is-undefined': isUndefined,
+            '../../src/utils/randomizer': randomizer,
+
+            '../src/utils/concat-arrays': concatArrays,
+            '../src/utils/is-array': isArray,
+            '../src/utils/is-function': isFunction,
+            '../src/utils/is-undefined': isUndefined,
+            '../src/utils/randomizer': randomizer,
+
+
+            './utils/concat-arrays': concatArrays,
+            './utils/is-array': isArray,
+            './utils/is-function': isFunction,
+            './utils/is-undefined': isUndefined,
+            './utils/randomizer': randomizer,
+
+            './config': CONFIG
+        };
         var require = function(path) {
-            var libs = {
-                'chai': chai,
-                'sinon': sinon,
-                '../.dist/funny-log': FunnyLog,
-                '../../.dist/funny-log': FunnyLog,
-                '../../src/utils/concat-arrays': concatArrays,
-                '../../src/utils/is-array': isArray,
-                '../../src/utils/is-function': isFunction,
-                '../../src/utils/is-undefined': isUndefined,
-                '../../src/utils/randomizer': randomizer,
-                '../src/utils/randomizer': randomizer
-            };
             return libs[path];
         };
+    </script>
+    <script src="../src/constructor.js"></script>
+
+    <script>
+        libs['../src/constructor'] = FunnyLogConstructor;
     </script>
 
     <script src="init.js"></script>

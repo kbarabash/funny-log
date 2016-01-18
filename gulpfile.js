@@ -15,14 +15,14 @@ gulp.task('build', function() {
         .pipe(concat.footer([
             "\n",
             'if (isNode()) {',
-            '    module.exports = FunnyLog;',
+            '    module.exports = FunnyLogConstructor;',
             '} else {',
-            '    window.FunnyLog = FunnyLog;',
+            '    window.FunnyLog = FunnyLogConstructor;',
             '}',
             '})();'
         ].join("\n")))
         .pipe(replace(/var .* = require\(.*\);/g, ''))
-        .pipe(replace(/module.exports = (?!FunnyLog).*;/g, ''))
+        .pipe(replace(/module.exports = (?!FunnyLogConstructor).*;/g, ''))
         .pipe(isProduction ? gutil.noop(): sourcemaps.write())
         .pipe(isProduction ? uglify() : gutil.noop())
         .pipe(gulp.dest(SETTINGS.buildFolder));
