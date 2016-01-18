@@ -7,4 +7,3 @@ cache:
 branches:
   only:
   - master
-script: npm run coverage
