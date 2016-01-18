@@ -6,6 +6,7 @@ var FunnyLog = function() {
             return console.log.apply(console, arguments);
         };
     }
+    var logRandmizer = randomizer;
 
     //region utils
     var getRandomPrefix = function(prefixes) {
@@ -16,7 +17,7 @@ var FunnyLog = function() {
              return prefixes[0];
          }
 
-        var index = randomizer(0, prefixes.length - 1);
+        var index = logRandmizer(0, prefixes.length - 1);
 
         return prefixes[index];
     };
@@ -55,8 +56,12 @@ var FunnyLog = function() {
         if (!isFunction(usrRandomizer)) {
             throw new Error('Randomizer has to be a function');
         }
-        randomizer = usrRandomizer;
+        logRandmizer = usrRandomizer;
         return this;
+    };
+
+    this.getRandomizer = function() {
+        return logRandmizer;
     };
     //endregion
 

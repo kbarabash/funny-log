@@ -11,6 +11,14 @@
             expect(randomizer(1, 1)).to.be.eql(1);
         });
 
+        it('randomizer(0, 1)', function() {
+            var result = randomizer(0, 1);
+            expect(result).to.be.a('number');
+            expect(result >= 0).to.be.true;
+            expect(result <= 1).to.be.true;
+            expect(result).to.be.eql(parseInt(result, 10));
+        });
+
         it('randomizer(0, 100)', function() {
             var result = randomizer(0, 100);
             expect(result).to.be.a('number');
