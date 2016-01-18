@@ -5,6 +5,12 @@
 Decorator which updates user's messages.
 I don't know why I did it.
 
+##on off functionality
+* FunnyLog **on**() - turn on the logger
+* FunnyLog **off**() - turn off the logger
+* boolean **isOff**() - shows the funny logger's status
+* boolean **isOn**() - shows the funny logger's status
+
 ##Methods
 * FunnyLog **haha**(string message) - ☜(ﾟヮﾟ☜) %message% 
 * FunnyLog **goToYourDaddy**(string message) - ┌∩┐(◣_◢)┌∩┐ %message% 
