@@ -1,5 +1,6 @@
 var FunnyLog = function() {
     var allPrefixes = [];
+    var isEnable = true;
     var provider = null;
     if (!isUndefined(console)) {
         provider = function() {
@@ -24,6 +25,11 @@ var FunnyLog = function() {
 
     var createLogFunction = function(item, cntx) {
         return function logger(message) {
+            if (cntx.isOff()) {
+                return this;
+            }
+
+
             if (!provider) {
                 return cntx;
             }
@@ -65,6 +71,26 @@ var FunnyLog = function() {
     };
     //endregion
 
+    //region on-off
+    this.on = function() {
+        isEnable = true;
+        return this;
+    };
+
+    this.off = function() {
+        isEnable = false;
+        return this;
+    };
+
+    this.isOff = function() {
+        return !isEnable;
+    };
+
+    this.isOn = function() {
+        return isEnable;
+    };
+    //endregion
+
     //region provider
     this.setProvider = function(usrProvider) {
         if (!isFunction(usrProvider)) {
@@ -81,6 +107,10 @@ var FunnyLog = function() {
     //endregion
 
     this.random = function(message) {
+        if (this.isOff()) {
+            return this;
+        }
+
         if (!allPrefixes.length) {
             allPrefixes = getAllPrefixes(CONFIG);
         }

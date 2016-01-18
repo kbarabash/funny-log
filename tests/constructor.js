@@ -1,9 +1,31 @@
 (function() {
     var expect = require('chai').expect;
+    var sinon = require('sinon');
     var FunnyLog = require('../.dist/funny-log');
     var randomizer = require('../src/utils/randomizer');
 
     describe('FunnyLog constructor', function() {
+        it('on off isOff isOn', function() {
+            var fl = new FunnyLog();
+            var logger = sinon.spy();
+            fl.setProvider(logger);
+            fl.haha('test');
+
+            logger = sinon.spy();
+            fl.setProvider(logger);
+            fl.off();
+            fl.haha('test');
+            expect(logger.calledOnce).to.be.false;
+            expect(fl.isOn()).to.be.false;
+            expect(fl.isOff()).to.be.true;
+
+            fl.on();
+            fl.haha('test');
+            expect(logger.calledOnce).to.be.true;
+            expect(fl.isOn()).to.be.true;
+            expect(fl.isOff()).to.be.false;
+        });
+
         it('setRandomizer', function() {
             //region throw
             expect(function() {
