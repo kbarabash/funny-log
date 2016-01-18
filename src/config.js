@@ -21,3 +21,5 @@ var CONFIG = {
     'doubleFacepalm':"(ლ_－)(－_ლ)",
     'bender':"|==(̢└͇̅┘͇̅(▤8כ−◦"
 };
+
+module.exports = CONFIG;
