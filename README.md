@@ -57,3 +57,13 @@ I don't know why I did it.
 var logger = new FunnyLogger();
 logger.haha('Hello World!'); //☜(ﾟヮﾟ☜) Hello World!
 ```
+
+##NPM Scripts
+* deploy - builds library for production
+* build - builds library for development
+* start - runs watchers and rebuild the project on every change's events
+* test - executes tests for browser and node
+* test-node - executes tests for node
+* test-browser - executes tests for the browser
+* coverage - generates code coverage's report
+
