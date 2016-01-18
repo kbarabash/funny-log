@@ -1,6 +1,7 @@
 #FunnyLog
 [![Build Status](https://travis-ci.org/kbarabash/funny-log.svg?branch=master)](https://travis-ci.org/kbarabash/funny-log)
 [![npm version](https://badge.fury.io/js/funny-log.svg)](https://badge.fury.io/js/funny-log)
+[![Twitter](https://img.shields.io/twitter/url/https/www.npmjs.com/package/funny-log.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 Decorator which updates user's messages.
 I don't know why I did it.
@@ -42,7 +43,7 @@ I don't know why I did it.
 * FunnyLog **noWay**(string message) - ༼ ಥل͟ಥ ༽ %message%,
 * FunnyLog **facepalm**(string message) - (－_ლ) %message%,
 * FunnyLog **doubleFacepalm**(string message) - (ლ_－)(－_ლ) %message%,
-* FunnyLog **bender**(string message) - |==(̢└͇̅┘͇̅(▤8כ−◦  %message%
+* FunnyLog **bender**(string message) - |==(̢└͇̅┘͇̅(▤8כ−◦  %message%
 * FunnyLog **smile**(string message) - (ツ) %message%.
     Prefix can be one of these:
     - (ツ)
