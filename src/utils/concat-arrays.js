@@ -4,3 +4,5 @@ var concatArrays = function(arr1, arr2) {
     }
     return arr1;
 };
+
+module.exports = concatArrays;

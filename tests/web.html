@@ -9,22 +9,70 @@
     <script src="../node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
     <script src="../node_modules/sinon/pkg/sinon.js"></script>
+    <script src="../node_modules/sinon/pkg/sinon.js"></script>
+
+
     <script src="../.dist/funny-log.js"></script>
     <script>
         mocha.ui('bdd');
+        var module = {};
+    </script>
 
+    <script src="../src/utils/concat-arrays.js"></script>
+    <script src="../src/utils/is-node.js"></script>
+    <script src="../src/utils/is-array.js"></script>
+    <script src="../src/utils/is-function.js"></script>
+    <script src="../src/utils/is-undefined.js"></script>
+    <script src="../src/utils/randomizer.js"></script>
+
+    <script>
         var require = function(path) {
             var libs = {
                 'chai': chai,
                 'sinon': sinon,
-                '../.dist/funny-log': FunnyLog
+                '../.dist/funny-log': FunnyLog,
+                '../../.dist/funny-log': FunnyLog,
+                '../../src/utils/concat-arrays': concatArrays,
+                '../../src/utils/is-array': isArray,
+                '../../src/utils/is-function': isFunction,
+                '../../src/utils/is-undefined': isUndefined,
+                '../../src/utils/randomizer': randomizer
             };
             return libs[path];
         };
     </script>
+
     <script src="init.js"></script>
     <script src="constructor.js"></script>
-    <script src="functions.js"></script>
+
+    <script src="functions/haha.js"></script>
+    <script src="functions/goToYourDaddy.js"></script>
+    <script src="functions/angry.js"></script>
+    <script src="functions/why.js"></script>
+    <script src="functions/partyTime.js"></script>
+    <script src="functions/homer.js"></script>
+    <script src="functions/really.js"></script>
+    <script src="functions/soWhat.js"></script>
+    <script src="functions/noWay.js"></script>
+    <script src="functions/facepalm.js"></script>
+    <script src="functions/omg.js"></script>
+    <script src="functions/doubleFacepalm.js"></script>
+    <script src="functions/bender.js"></script>
+    <script src="functions/wtf.js"></script>
+    <script src="functions/iAmChampion.js"></script>
+    <script src="functions/youSoMean.js"></script>
+    <script src="functions/iDontCare.js"></script>
+    <script src="functions/hehehe.js"></script>
+    <script src="functions/allPraiseToHim.js"></script>
+    <script src="functions/mmmOkay.js"></script>
+    <script src="functions/smile.js"></script>
+    <script src="functions/random.js"></script>
+
+    <script src="utils/concat-arrays.js"></script>
+    <script src="utils/is-array.js"></script>
+    <script src="utils/is-function.js"></script>
+    <script src="utils/is-undefined.js"></script>
+    <script src="utils/randomizer.js"></script>
     <script>
         mocha.run();
     </script>
