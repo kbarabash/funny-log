@@ -19,7 +19,8 @@ var CONFIG = {
     'noWay':["༼ ಥل͟ಥ ༽"],
     'facepalm':"(－_ლ)",
     'doubleFacepalm':"(ლ_－)(－_ლ)",
-    'bender':"|==(̢└͇̅┘͇̅(▤8כ−◦"
+    'bender':"|==(̢└͇̅┘͇̅(▤8כ−◦",
+    'tableFlip':"(╯°□°）╯︵ ┻━┻)"
 };
 
 module.exports = CONFIG;
