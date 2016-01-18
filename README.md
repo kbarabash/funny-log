@@ -1,7 +1,6 @@
 #FunnyLog
 [![Build Status](https://travis-ci.org/kbarabash/funny-log.svg?branch=master)](https://travis-ci.org/kbarabash/funny-log)
 [![npm version](https://badge.fury.io/js/funny-log.svg)](https://badge.fury.io/js/funny-log)
-[![Twitter](https://img.shields.io/twitter/url/https/www.npmjs.com/package/funny-log.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 Decorator which updates user's messages.
 I don't know why I did it.
