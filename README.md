@@ -49,6 +49,7 @@ I don't know why I did it.
     - (ღ˘⌣˘ღ)
     - ( ͡° ͜ʖ ͡°)
     -  ༼ຈل͜ຈ༽
+* FunnyLog **tableFlip**(string message) - (╯°□°）╯︵ ┻━┻) %message%
 * FunnyLog **random**(string message) - %random-prefix% %message%.
 
 
