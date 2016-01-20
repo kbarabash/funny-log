@@ -1,6 +1,6 @@
 {
   "name": "funny-log",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Decorator which updates user's messages. I don't know why I did it.",
   "keywords": [
     "funny",
