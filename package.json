@@ -20,9 +20,9 @@
     "deploy": "gulp build --production",
     "build": "gulp build",
     "start": "gulp serve",
-    "test": "npm run test-node && npm run test-web",
+    "test": "npm run test-node && npm run test-browser",
     "test-node": "mocha --recursive ./tests/",
-    "test-web": "mocha-phantomjs ./tests/web.html",
+    "test-browser": "mocha-phantomjs ./tests/web.html",
     "coverage": "istanbul cover _mocha -- -R spec --recursive ./tests/"
   },
   "dependencies": {
