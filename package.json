@@ -1,6 +1,6 @@
 {
   "name": "funny-log",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Decorator which updates user's messages. I don't know why I did it.",
   "keywords": [
     "funny",
@@ -16,7 +16,6 @@
   "license": "ISC",
   "main": ".dist/funny-log.js",
   "scripts": {
-    "install": "npm run deploy",
     "deploy": "gulp build --production",
     "build": "gulp build",
     "start": "gulp serve",
@@ -25,20 +24,19 @@
     "test-browser": "mocha-phantomjs ./tests/web.html",
     "coverage": "istanbul cover _mocha -- -R spec --recursive ./tests/"
   },
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat-util": "^0.5.4",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-util": "^0.5.5",
     "gulp-util": "^3.0.7",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.1",
-    "gulp-replace": "0.5.4"
-  },
-  "devDependencies": {
-    "mocha": "^2.3.4",
-    "chai": "^3.4.1",
-    "sinon": "^1.17.2",
-    "mocha-phantomjs": "^4.0.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-replace": "^0.5.4",
+    "mocha": "^2.5.3",
+    "chai": "^3.5.0",
+    "sinon": "^1.17.4",
+    "mocha-phantomjs": "^4.1.0",
     "deep-freeze": "0.0.1",
-    "istanbul": "0.4.2"
+    "istanbul": "^0.4.4"
   }
 }
